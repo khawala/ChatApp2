@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GalleryActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/transparent_bg"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:fontFamily="@font/cocon"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="hlkfnds , skdhfoikln kfshlkdnjxkclhn khikln kfdlhkxl kdfhioskh kdfhisklfhnk kdfhilksdhfis kdhflsklnkx kdlfhildkfnkldhfl kldfhlkfhoslkkhkc " />
+    <ImageView
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="App Logo"
+        android:onClick="emptyActiviyt"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rose" />
+
+
+
+</LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
