@@ -2,62 +2,327 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".GalleryActivity">
-    <android.support.design.widget.AppBarLayout
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <android.support.v7.widget.Toolbar
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".GalleryActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/MenuStyle">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/toolbar"
-            android:background="@color/colorPrimaryDark"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/MenuStyle">
+            android:orientation="horizontal"
+    android:gravity="center"
+            android:onClick="emptyActiviyt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
-        </android.support.v7.widget.Toolbar>
-    </android.support.design.widget.AppBarLayout>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/rose" />
 
- <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cocon"
+                android:gravity="center"
+                android:background="@drawable/transparent_bg"
+                android:padding="5dp"
+                android:text="hlkfnds , skdhfoikln kdfhisklfhnk kdfhilksdhfis kdhflsklnkx kdlfhildkfnkldhfl kldfhlkfhoslkkhkc "
+                android:textColor="#ffffff" />
 
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:gravity="center">
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:fontFamily="@font/cocon"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:text="hlkfnds , skdhfoikln kfshlkdnjxkclhn khikln kfdlhkxl kdfhioskh kdfhisklfhnk kdfhilksdhfis kdhflsklnkx kdlfhildkfnkldhfl kldfhlkfhoslkkhkc " />
-    <ImageView
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00688B"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="emptyActiviyt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
-        android:layout_width="150dp"
-        android:radius="40dp"
-        android:layout_height="150dp"
-        android:contentDescription="App Logo"
-        android:onClick="emptyActiviyt"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/rose" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/happy" />
 
-     <LinearLayout
-         android:layout_width="match_parent"
-         android:layout_height="1dp"
-android:outlineSpotShadowColor="@color/cardview_dark_background"
-         android:paddingLeft="10dp"
-         android:paddingRight="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cocon"
+                android:gravity="center"
+                android:background="@drawable/transparent_bg"
+                android:padding="5dp"
+                android:text="السلام عليكم ورحمة الله وبركاته اما بعد......
+مع تحيات >>>>>"
+                android:textColor="#ffffff" />
 
-</LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00688B"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:onClick="emptyActiviyt"
+            android:paddingRight="10dp">
 
-</LinearLayout>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/coach" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cocon"
+                android:gravity="center"
+                android:background="@drawable/transparent_bg"
+                android:padding="5dp"
+                android:text="السلام عليكم ورحمة الله وبركاته اما بعد......
+مع تحيات >>>>>>"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00688B"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:onClick="emptyActiviyt"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/christmas" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cocon"
+                android:gravity="center"
+                android:background="@drawable/transparent_bg"
+                android:padding="5dp"
+                android:text="السلام عليكم ورحمة الله وبركاته اما بعد......
+مع تحيات >>>>>"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00688B"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="emptyActiviyt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/rose" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_bg"
+                android:fontFamily="@font/cocon"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="السلام عليكم ورحمة الله وبركاته اما بعد......
+مع تحيات >>>>"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00688B"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="emptyActiviyt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/happy" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cocon"
+                android:gravity="center"
+                android:background="@drawable/transparent_bg"
+                android:padding="5dp"
+                android:text="السلام عليكم ورحمة الله وبركاته اما بعد......
+مع تحيات >>>"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00688B"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="emptyActiviyt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/fruit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cocon"
+                android:gravity="center"
+                android:background="@drawable/transparent_bg"
+                android:padding="5dp"
+                android:text="السلام عليكم ورحمة الله وبركاته اما بعد......
+مع تحيات >>>>"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00688B"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="emptyActiviyt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/happy" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cocon"
+                android:gravity="center"
+                android:background="@drawable/transparent_bg"
+                android:padding="5dp"
+                android:text="السلام عليكم ورحمة الله وبركاته اما بعد......
+مع تحيات >>>"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00688B"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="emptyActiviyt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+
+                app:srcCompat="@drawable/coach" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cocon"
+                android:gravity="center"
+                android:background="@drawable/transparent_bg"
+                android:padding="5dp"
+                android:text="السلام عليكم ورحمة الله وبركاته اما بعد......
+مع تحيات >>>>"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00688B"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
 </ScrollView>
