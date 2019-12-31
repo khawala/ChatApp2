@@ -18,11 +18,11 @@ import com.example.chatapp2.R;
 public class ThirdFragment extends Fragment implements View.OnClickListener{  // Create a VideoView variable, a MediaPlayer variable, and an int to hold the current
     // Create a VideoView variable, a MediaPlayer variable, and an int to hold the current
     // video position.
-    private VideoView view;
-    MediaPlayer mMediaPlayer;
-    int mCurrentVideoPosition;
     Button galleryButton;
-    MediaController mc;
+    private VideoView view;
+    private MediaPlayer mMediaPlayer;
+    int mCurrentVideoPosition;
+    private MediaController mc;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class ThirdFragment extends Fragment implements View.OnClickListener{  //
         mc= new MediaController(getActivity());
         galleryButton = (Button) rootView.findViewById(R.id.galleryButton);
         view = (VideoView)rootView.findViewById(R.id.videoView);
-        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.plexus_bg;
+        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.video3;
         view.setVideoURI(Uri.parse(path));
         //hide the visibility of video controller
         mc.setVisibility(View.INVISIBLE);

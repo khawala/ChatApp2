@@ -15,9 +15,9 @@ public class FirstFragment extends  Fragment {
     // Create a VideoView variable, a MediaPlayer variable, and an int to hold the current
     // video position.
     private VideoView view;
-    MediaPlayer mMediaPlayer;
+    private MediaPlayer mMediaPlayer;
     int mCurrentVideoPosition;
-    MediaController mc;
+    private MediaController mc;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class FirstFragment extends  Fragment {
         mc= new MediaController(getActivity());
 
      view = (VideoView)rootView.findViewById(R.id.videoView);
-        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.sunrise_sky;
+        String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.video;
         view.setVideoURI(Uri.parse(path));
         //hide the visibility of video controller
         mc.setVisibility(View.INVISIBLE);

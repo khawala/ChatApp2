@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -40,7 +44,7 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/transparent_bg"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
@@ -48,6 +52,9 @@
             android:fontFamily="@font/cocon"
             android:gravity="center"
             android:textColor="#ffffff"
+            android:padding="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
             android:text="بسم الله الرحمن الرحيم "
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
@@ -62,3 +69,4 @@
     </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>
+</ScrollView>
